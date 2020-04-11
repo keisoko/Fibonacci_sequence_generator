@@ -1,4 +1,4 @@
-from logzero import logger, logfile
+from logzero import logger
 
 
 def fibonacci_sequence_generator(start, end):
@@ -12,5 +12,4 @@ def fibonacci_sequence_generator(start, end):
 fibonacci_numbers_beginning = fibonacci_sequence_generator(start=1, end=20)
 amount_of_numbers = len(fibonacci_numbers_beginning)
 print()
-# logzero.logfile('test.log')
 logger.info(f"Fibonacci number sequence of {amount_of_numbers} numbers is: \n\n{fibonacci_numbers_beginning}")

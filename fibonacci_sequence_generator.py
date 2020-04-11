@@ -9,7 +9,7 @@ def fibonacci_sequence_generator(start, end):
     return fibonacci_numbers_beginning
 
 
-fibonacci_numbers_beginning = fibonacci_sequence_generator(start=1, end=12)
+fibonacci_numbers_beginning = fibonacci_sequence_generator(start=1, end=20)
 amount_of_numbers = len(fibonacci_numbers_beginning)
 print()
 # logzero.logfile('test.log')

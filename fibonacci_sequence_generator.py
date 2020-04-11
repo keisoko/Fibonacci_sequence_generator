@@ -13,3 +13,12 @@ fibonacci_numbers_beginning = fibonacci_sequence_generator(start=1, end=20)
 amount_of_numbers = len(fibonacci_numbers_beginning)
 print()
 logger.info(f"Fibonacci number sequence of {amount_of_numbers} numbers is: \n\n{fibonacci_numbers_beginning}")
+
+# Output:
+# [Running] python -u "d:\HTML\Learning\fibonacci_sequence_generator.py"
+
+# [I 200411 19:23:22 fibonacci_sequence_generator:15] Fibonacci number sequence of 22 numbers is:
+    
+#     [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946]
+
+# [Done] exited with code=0 in 0.236 seconds

@@ -16,7 +16,7 @@ logger.info(f"Fibonacci number sequence of {amount_of_numbers} numbers is: \n\n{
 
 # Output:
 #
-# [I 200411 19:23:22 fibonacci_sequence_generator:15] Fibonacci number sequence of 22 numbers is:
+# [I 200411 19:23:22 fibonacci_sequence_generator:15] Fibonacci number sequence of 21 numbers is:
 #    
 #     [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
 #

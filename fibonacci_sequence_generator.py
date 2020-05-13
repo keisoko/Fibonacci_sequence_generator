@@ -12,9 +12,8 @@ print()
 logger.info(f"The sequence of the {amount_of_numbers} fibonacci numbers is:\n\n{fiblist}")
 
 # Output:
-#
-# [I 200411 19:23:22 fibonacci_sequence_generator:15] Fibonacci numbers sequence of 21 numbers is:
-#    
+# [I 200513 02:34:11 fibonacci_sequence_generator:14] The sequence of the 21 fibonacci numbers is:
+    
 #     [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
-#
-# [Done] exited with code=0 in 0.191 seconds
+
+# [Done] exited with code=0 in 0.187 seconds

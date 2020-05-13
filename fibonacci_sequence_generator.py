@@ -9,7 +9,7 @@ def fibonacci_sequence_generator(start, end):
 fiblist = fibonacci_sequence_generator(start=1, end=19)
 amount_of_numbers = len(fiblist)
 print()
-logger.info(f"Fibonacci number sequence of {amount_of_numbers} numbers is: \n\n{fiblist}")
+logger.info(f"The sequence of the {amount_of_numbers} fibonacci numbers is:\n\n{fiblist}")
 
 # Output:
 #

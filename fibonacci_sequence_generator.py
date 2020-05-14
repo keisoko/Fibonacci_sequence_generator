@@ -2,7 +2,7 @@ from logzero import logger
 
 def fibonacci_sequence_generator(start, end):
     fiblist = [0, 1]
-    for _ in range(end + 1):
+    for _ in range(start, end + 1):
         fiblist.append(fiblist[-1] + fiblist[-2])
     return fiblist
 

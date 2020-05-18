@@ -1,2 +1,2 @@
-# Fibonnacci_sequence_generator
-Fibonnacci sequence generator in Python and JavaScript
+# Fibonacci_sequence_generator
+Fibonacci sequence generator in Python and JavaScript

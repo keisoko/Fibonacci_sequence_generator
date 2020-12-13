@@ -2,7 +2,7 @@ def fibonacci_sequence_generator(start, end):
     fiblist = [0, 1]
     for _ in range(start, end + 1):
         fiblist.append(fiblist[-1] + fiblist[-2])
-    return f"The {sequence!r} consists of the {len(fiblist)} Fibonacci numbers:\n\n{fiblist}"
+    return f"The {sequence!r} consist of the {len(fiblist)} Fibonacci numbers:\n\n{fiblist}"
 
 
 fibonacci_sequences = {

@@ -1,4 +1,4 @@
-def fibonacci_sequence_generator(start, end):
+def fibonacci_sequence_generator(start: int, end: int) -> str:
     fiblist = [0, 1]
     for _ in range(start, end + 1):
         fiblist.append(fiblist[-1] + fiblist[-2])
@@ -11,4 +11,5 @@ fibonacci_sequences = {
 }
 
 for sequence in fibonacci_sequences.keys():
-    print(fibonacci_sequence_generator(**fibonacci_sequences[sequence]), end="\n\n")
+    print(fibonacci_sequence_generator(
+        **fibonacci_sequences[sequence]), end="\n\n")

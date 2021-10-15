@@ -10,6 +10,5 @@ fibonacci_sequences = {
     "second_sequence": {"start": 1, "end": 24}
 }
 
-for sequence in fibonacci_sequences.keys():
-    print(fibonacci_sequence_generator(
-        **fibonacci_sequences[sequence]), end="\n\n")
+for sequence, value in fibonacci_sequences.items():
+    print(fibonacci_sequence_generator(**value), end="\n\n")

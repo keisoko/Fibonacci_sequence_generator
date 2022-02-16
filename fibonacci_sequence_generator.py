@@ -1,10 +1,13 @@
 """Fibonacci Sequence Generator"""
 
+
 def fibonacci_sequence_generator(START_OF_SEQUENCE: int, end: int) -> str:
     """Generates a list of fibonacci sequence numbers from a given sequence"""
     fiblist = [0, 1]
-    for _ in range(START_OF_SEQUENCE, end + 1):
-        fiblist.append(fiblist[-1] + fiblist[-2])
+    fiblist.extend(
+        fiblist[-1] + fiblist[-2] for _ in range(START_OF_SEQUENCE, end + 1)
+    )
+
     return f"The {sequence!r} consist of the {len(fiblist)} Fibonacci numbers:\n\n{fiblist}"
 
 

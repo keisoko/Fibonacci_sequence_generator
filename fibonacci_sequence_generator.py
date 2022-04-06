@@ -9,10 +9,11 @@ def fibonacci_sequence_generator(START_OF_SEQUENCE: int, end: int) -> str:
     return f"The {sequence!r} consist of the {len(fiblist)} Fibonacci numbers:\n\n{fiblist}"
 
 
-fibonacci_sequences = {
-    "first_sequence": {"START_OF_SEQUENCE": 1, "end": 19},
-    "second_sequence": {"START_OF_SEQUENCE": 1, "end": 24},
-}
+if __name__ == "__main__":
+    fibonacci_sequences = {
+        "first_sequence": {"START_OF_SEQUENCE": 1, "end": 19},
+        "second_sequence": {"START_OF_SEQUENCE": 1, "end": 24},
+    }
 
-for sequence, value in fibonacci_sequences.items():
-    print(fibonacci_sequence_generator(**value), end="\n\n")
+    for sequence, value in fibonacci_sequences.items():
+        print(fibonacci_sequence_generator(**value), end="\n\n")

@@ -6,7 +6,7 @@ import pprint
 
 
 def fibonacci_sequence_generator(end: int) -> list[int]:
-    """Generates a list of fibonacci sequence numbers from a given sequence"""
+    """Generates a list of fibonacci numbers from a given range."""
 
     if START_OF_SEQUENCE < 1:
         return []

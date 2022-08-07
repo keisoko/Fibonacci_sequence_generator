@@ -1,19 +1,26 @@
 """Fibonacci Sequence Generator"""
 
-START_OF_SEQUENCE: int = 1
-
 import pprint
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True)
+class ConstantsNamespace:
+    START_OF_SEQUENCE: int = 1
+
+
+constants = ConstantsNamespace()
 
 
 def fibonacci_sequence_generator(end: int) -> list[int]:
     """Generates a list of fibonacci numbers from a given range."""
 
-    if START_OF_SEQUENCE < 1:
+    if constants.START_OF_SEQUENCE < 1:
         return []
 
     fib_list = [0, 1]
     fib_list.extend(
-        fib_list[-1] + fib_list[-2] for _ in range(START_OF_SEQUENCE, end + 1)
+        fib_list[-1] + fib_list[-2] for _ in range(constants.START_OF_SEQUENCE, end + 1)
     )
 
     fib_list.insert(0, len(fib_list))

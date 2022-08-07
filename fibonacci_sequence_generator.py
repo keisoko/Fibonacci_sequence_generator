@@ -33,8 +33,8 @@ def main():
     pp = pprint.PrettyPrinter(underscore_numbers=True, width=200)
 
     pp.pprint(fibonacci_sequence_generator(end=19))
-    pp.pprint(fibonacci_sequence_generator(end=24))
     pp.pprint(fibonacci_sequence_generator(end=22))
+    pp.pprint(fibonacci_sequence_generator(end=24))
 
 
 if __name__ == "__main__":

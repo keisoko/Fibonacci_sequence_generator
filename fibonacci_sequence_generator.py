@@ -1,8 +1,11 @@
 """Fibonacci Sequence Generator"""
+
+START_OF_SEQUENCE: int = 1
+
 import pprint
 
 
-def fibonacci_sequence_generator(START_OF_SEQUENCE: int, end: int) -> list[int]:
+def fibonacci_sequence_generator(end: int) -> list[int]:
     """Generates a list of fibonacci sequence numbers from a given sequence"""
 
     if START_OF_SEQUENCE < 1:
@@ -22,9 +25,9 @@ def main():
     """Main program"""
     pp = pprint.PrettyPrinter(underscore_numbers=True, width=200)
 
-    pp.pprint(fibonacci_sequence_generator(START_OF_SEQUENCE=1, end=19))
-    pp.pprint(fibonacci_sequence_generator(START_OF_SEQUENCE=1, end=24))
-    pp.pprint(fibonacci_sequence_generator(START_OF_SEQUENCE=1, end=22))
+    pp.pprint(fibonacci_sequence_generator(end=19))
+    pp.pprint(fibonacci_sequence_generator(end=24))
+    pp.pprint(fibonacci_sequence_generator(end=22))
 
 
 if __name__ == "__main__":

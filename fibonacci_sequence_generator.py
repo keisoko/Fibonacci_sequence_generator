@@ -31,6 +31,7 @@ def fibonacci_sequence_generator(end: int) -> list[int]:
     fib_list.extend(
         fib_list[-1] + fib_list[-2] for _ in range(constants.START_OF_SEQUENCE, end + 1)
     )
+    fib_list.insert(0, len(fib_list))
 
     return fib_list
 

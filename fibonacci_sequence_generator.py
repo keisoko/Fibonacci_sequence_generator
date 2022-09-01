@@ -36,7 +36,7 @@ def fibonacci_sequence_generator(end: int) -> list[int]:
     return fib_list
 
 
-def main():
+def execute_main():
     """Main program"""
     custom_printer = pprint.PrettyPrinter(underscore_numbers=True, width=200)
 
@@ -46,4 +46,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    execute_main()

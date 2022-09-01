@@ -37,11 +37,11 @@ def fibonacci_sequence_generator(end: int) -> list[int]:
 
 def main():
     """Main program"""
-    pp = pprint.PrettyPrinter(underscore_numbers=True, width=200)
+    custom_printer = pprint.PrettyPrinter(underscore_numbers=True, width=200)
 
-    pp.pprint(fibonacci_sequence_generator(end=19))
-    pp.pprint(fibonacci_sequence_generator(end=22))
-    pp.pprint(fibonacci_sequence_generator(end=24))
+    custom_printer.pprint(fibonacci_sequence_generator(end=19))
+    custom_printer.pprint(fibonacci_sequence_generator(end=22))
+    custom_printer.pprint(fibonacci_sequence_generator(end=24))
 
 
 if __name__ == "__main__":

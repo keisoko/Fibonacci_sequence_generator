@@ -2,6 +2,7 @@
 
 import pprint
 from dataclasses import dataclass
+from functools import lru_cache
 
 
 @dataclass(frozen=True)
@@ -21,6 +22,7 @@ class StartOfSequenceLessThanOne(Exception):
         return "START_OF_SEQUENCE must be 1"
 
 
+@lru_cache(maxsize=5)
 def fibonacci_sequence_generator(end: int) -> list[int]:
     """Generates a list of fibonacci numbers from a given range."""
 

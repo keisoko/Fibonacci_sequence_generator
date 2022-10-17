@@ -38,8 +38,8 @@ def fibonacci_sequence_generator(end: int) -> list[int]:
     return fib_list
 
 
-def execute_main():
-    """Main program"""
+def execute_main() -> None:
+
     custom_printer = pprint.PrettyPrinter(underscore_numbers=True, width=200)
 
     custom_printer.pprint(fibonacci_sequence_generator(end=19))
